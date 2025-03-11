@@ -70,7 +70,7 @@ export default function Experience() {
         </div>
 
         <div className="relative">
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-600 to-emerald-600 hidden md:block" />
+          <div className="absolute left-4 md:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-600 to-emerald-600" />
 
           <div className="space-y-12">
             {experiences.map((exp, index) => (
@@ -78,11 +78,11 @@ export default function Experience() {
                 key={index}
                 className="relative group"
               >
-                <div className="hidden md:block absolute -left-3 top-0 w-14 h-14 rounded-full bg-white/80 backdrop-blur-sm shadow-md group-hover:shadow-lg transition-shadow duration-300">
-                  <div className="absolute inset-2 rounded-full bg-gradient-to-r from-blue-600 to-emerald-600" />
+                <div className="absolute -left-[11px] md:-left-3 top-0 w-8 md:w-14 h-8 md:h-14 rounded-full bg-white/80 backdrop-blur-sm shadow-md group-hover:shadow-lg transition-shadow duration-300">
+                  <div className="absolute inset-1.5 md:inset-2 rounded-full bg-gradient-to-r from-blue-600 to-emerald-600" />
                 </div>
 
-                <div className="ml-0 md:ml-20">
+                <div className="ml-8 md:ml-20">
                   <div className="bg-gradient-to-br from-white/80 to-blue-50/30 backdrop-blur-sm rounded-2xl p-6 shadow-lg group-hover:shadow-xl transition-all duration-300 border border-blue-100/20">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                       <div>
