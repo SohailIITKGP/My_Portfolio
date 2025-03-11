@@ -4,9 +4,17 @@ import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import { cn } from '@/lib/utils'
+import { usePathname } from 'next/navigation'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const pathname = usePathname()
+
+  const isActive = (path: string) => {
+    if (path === '/' && pathname === '/') return true
+    if (path !== '/' && pathname.startsWith(path)) return true
+    return false
+  }
 
   return (
     <nav className="fixed top-0 z-50 w-full bg-white/70 backdrop-blur-xl">
@@ -27,8 +35,7 @@ const Navbar = () => {
           <div className="hidden md:flex md:items-center">
             <div className="flex items-center gap-2 bg-white/50 backdrop-blur-sm px-3 py-2 rounded-full border border-gray-100/20 shadow-sm">
               {[
-                { href: '/', label: 'Home' },
-                { href: '/about', label: 'About' },
+                { href: '/', label: 'About' },
                 { href: '/projects', label: 'Projects' },
                 { href: '/experience', label: 'Experience' },
                 { href: '/responsibilities', label: 'Responsibilities' },
@@ -36,12 +43,19 @@ const Navbar = () => {
                 <Link
                   key={href}
                   href={href}
-                  className="group relative px-4 py-2 rounded-full text-gray-600 hover:text-gray-900 transition-colors duration-200"
+                  className={cn(
+                    "group relative px-4 py-2 rounded-full transition-all duration-200",
+                    isActive(href) 
+                      ? "text-indigo-600 bg-indigo-50/50" 
+                      : "text-gray-600 hover:text-gray-900"
+                  )}
                 >
                   <span className="relative z-10 font-medium">
                     {label}
                   </span>
-                  <span className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-50 to-purple-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                  {!isActive(href) && (
+                    <span className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-50 to-purple-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                  )}
                 </Link>
               ))}
             </div>
@@ -79,8 +93,10 @@ const Navbar = () => {
                   key={href}
                   href={href}
                   className={cn(
-                    "flex items-center px-6 py-4 text-gray-600 hover:text-gray-900 hover:bg-gradient-to-r hover:from-indigo-50/50 hover:to-purple-50/50 transition-all duration-200",
-                    "animate-in fade-in slide-in-from-right"
+                    "flex items-center px-6 py-4 transition-all duration-200 animate-in fade-in slide-in-from-right",
+                    isActive(href)
+                      ? "text-indigo-600 bg-indigo-50/50"
+                      : "text-gray-600 hover:text-gray-900 hover:bg-gradient-to-r hover:from-indigo-50/50 hover:to-purple-50/50"
                   )}
                   style={{ 
                     animationDelay: `${index * 50}ms`,
