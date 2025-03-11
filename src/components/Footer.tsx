@@ -14,19 +14,19 @@ const Footer = () => {
   }
 
   return (
-    <footer className="w-full border-t border-gray-100 bg-gradient-to-b from-white to-gray-50/50">
+    <footer className="w-full border-t border-gray-100 bg-gradient-to-b from-white to-blue-50/30">
       <div className="container mx-auto px-4 py-12 relative">
         {/* Background decorations */}
         <div className="absolute inset-0 overflow-hidden opacity-5">
-          <div className="absolute -top-24 -right-20 w-64 h-64 bg-indigo-200 rounded-full mix-blend-multiply filter blur-xl"></div>
-          <div className="absolute -bottom-24 -left-20 w-64 h-64 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl"></div>
+          <div className="absolute -top-24 -right-20 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl"></div>
+          <div className="absolute -bottom-24 -left-20 w-64 h-64 bg-emerald-200 rounded-full mix-blend-multiply filter blur-xl"></div>
         </div>
 
         <div className="relative grid grid-cols-1 gap-12 md:grid-cols-3 lg:gap-16">
           {/* Navigation Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">
-              Links
+            <h3 className="text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-emerald-600">
+              Navigation
             </h3>
             <nav className="flex flex-col gap-2">
               {[
@@ -39,7 +39,7 @@ const Footer = () => {
                   key={href} 
                   href={href}
                   className={`px-2 py-1 transition-colors duration-200 ${
-                    isActive(href) ? 'text-indigo-600 font-medium' : 'text-gray-600 hover:text-indigo-600'
+                    isActive(href) ? 'text-blue-600 font-medium' : 'text-gray-600 hover:text-emerald-600'
                   }`}
                 >
                   {label}
@@ -50,8 +50,8 @@ const Footer = () => {
 
           {/* Contact Information */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
-              Contact me
+            <h3 className="text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-cyan-600">
+              Contact
             </h3>
             <div className="flex flex-col gap-3">
               <a

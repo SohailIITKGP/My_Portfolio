@@ -41,18 +41,24 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="min-h-[calc(100vh-5rem)] bg-gradient-to-b from-white via-blue-50/30 to-purple-50/30 py-16 sm:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div className="min-h-[calc(100vh-5rem)] bg-gradient-to-br from-blue-50/80 via-cyan-50/40 to-emerald-50/60 py-16 sm:py-24 relative overflow-hidden">
+      <div className="absolute inset-0 bg-grid-slate-200/50 [mask-image:linear-gradient(0deg,white,transparent)] -z-10"></div>
+      <div className="absolute inset-0 flex items-center justify-center -z-10">
+        <div className="w-[800px] h-[800px] rounded-full bg-blue-100/20 blur-3xl"></div>
+        <div className="absolute right-0 w-[600px] h-[600px] rounded-full bg-emerald-100/20 blur-3xl"></div>
+        <div className="absolute left-20 w-[600px] h-[600px] rounded-full bg-cyan-100/20 blur-3xl"></div>
+      </div>
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16">
           <span className="text-blue-600 font-semibold mb-4 block">PORTFOLIO</span>
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-4">
             Featured{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600">
               Projects
             </span>
           </h1>
           
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             Explore my showcase of innovative solutions and technical expertise. Each project demonstrates my commitment to creating impactful and scalable applications.
           </p>
         </div>
@@ -61,7 +67,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-3xl bg-white shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 border border-gray-100"
+              className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/80 to-blue-50/30 backdrop-blur-sm shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 border border-blue-100/20"
             >
               <div className="p-6">
                 <div className="flex items-center justify-between mb-6">
@@ -82,7 +88,7 @@ export default function Projects() {
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="rounded-full bg-purple-50 p-2 text-purple-600 hover:bg-purple-100 transition-colors duration-300 transform hover:scale-110"
+                      className="rounded-full bg-emerald-50 p-2 text-emerald-600 hover:bg-emerald-100 transition-colors duration-300 transform hover:scale-110"
                       title="View Live Demo"
                     >
                       <ExternalLink className="h-5 w-5" />
@@ -92,8 +98,8 @@ export default function Projects() {
 
                 <ul className="space-y-3 mb-6">
                   {project.description.map((point, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-gray-600">
-                      <CheckCircle2 className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                    <li key={idx} className="flex items-start gap-2 text-gray-700">
+                      <CheckCircle2 className="h-5 w-5 text-emerald-600 mt-1 flex-shrink-0" />
                       <span>{point}</span>
                     </li>
                   ))}
@@ -103,7 +109,7 @@ export default function Projects() {
                   {project.tags.map((tag, idx) => (
                     <span
                       key={idx}
-                      className="inline-flex items-center rounded-full bg-gradient-to-r from-blue-50 to-purple-50 px-3 py-1 text-sm font-medium text-blue-600 border border-blue-100/30"
+                      className="inline-flex items-center rounded-full bg-gradient-to-r from-blue-50 to-emerald-50 px-3 py-1 text-sm font-medium text-blue-600 border border-blue-100/30"
                     >
                       <Tags className="mr-1 h-3 w-3" />
                       {tag}

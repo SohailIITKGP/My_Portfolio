@@ -56,18 +56,27 @@ export default function Responsibilities() {
   ];
 
   return (
-    <div className="min-h-[calc(100vh-5rem)] bg-gradient-to-b from-white to-gray-50 py-16 sm:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-4">
-          Positions of{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-            Responsibility
-          </span>
-        </h1>
-        
-        <p className="text-lg text-gray-600 mb-12">
-          Leadership roles and responsibilities I've undertaken during my academic journey.
-        </p>
+    <div className="min-h-[calc(100vh-5rem)] bg-gradient-to-br from-blue-50/80 via-cyan-50/40 to-emerald-50/60 py-16 sm:py-24 relative overflow-hidden">
+      <div className="absolute inset-0 bg-grid-slate-200/50 [mask-image:linear-gradient(0deg,white,transparent)] -z-10"></div>
+      <div className="absolute inset-0 flex items-center justify-center -z-10">
+        <div className="w-[800px] h-[800px] rounded-full bg-blue-100/20 blur-3xl"></div>
+        <div className="absolute right-0 w-[600px] h-[600px] rounded-full bg-emerald-100/20 blur-3xl"></div>
+        <div className="absolute left-20 w-[600px] h-[600px] rounded-full bg-cyan-100/20 blur-3xl"></div>
+      </div>
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+        <div className="text-center mb-16">
+          <span className="text-blue-600 font-semibold mb-4 block">RESPONSIBILITIES</span>
+          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-4">
+            Key{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600">
+              Responsibilities
+            </span>
+          </h1>
+          
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+            Discover the various roles and responsibilities I've handled in my professional journey.
+          </p>
+        </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {positions.map((position, index) => (
