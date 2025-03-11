@@ -26,7 +26,7 @@ const Footer = () => {
           {/* Navigation Links */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">
-              Navigation
+              Links
             </h3>
             <nav className="flex flex-col gap-2">
               {[
@@ -51,7 +51,7 @@ const Footer = () => {
           {/* Contact Information */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
-              Contact
+              Contact me
             </h3>
             <div className="flex flex-col gap-3">
               <a
@@ -115,23 +115,9 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-gray-100">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-            <p className="text-sm text-gray-500">
-              © {new Date().getFullYear()} Sohail. All rights reserved.
+            <p className="text-sm text-gray-500 w-fit mx-auto">
+              © 2025 Sohail. All rights reserved.
             </p>
-            <div className="flex items-center gap-6">
-              <a
-                href="#"
-                className="text-sm text-gray-500 hover:text-gray-600 transition-colors"
-              >
-                Privacy Policy
-              </a>
-              <a
-                href="#"
-                className="text-sm text-gray-500 hover:text-gray-600 transition-colors"
-              >
-                Terms of Service
-              </a>
-            </div>
           </div>
         </div>
       </div>
