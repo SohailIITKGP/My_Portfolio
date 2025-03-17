@@ -3,55 +3,42 @@ import { Award, Calendar, Users } from "lucide-react";
 export default function Responsibilities() {
   const positions = [
     {
-      title: "Technical Lead - College Tech Club",
-      organization: "Engineering College",
-      period: "2021 - 2022",
+      title: "Tech Head",
+      organization: "Spring Fest",
+      period: "2024 - 2025",
+      certificateLink: "https://drive.google.com/file/d/1GBkTVjs4jPJtmS5NWZz77bZ5VVK3NCbQ/view?usp=drive_link",
       responsibilities: [
-        "Led a team of 20+ members in organizing technical events and workshops",
-        "Conducted weekly coding sessions and mentored junior students",
-        "Organized annual tech fest with 1000+ participants",
-        "Developed and maintained the club's website",
-        "Established partnerships with tech companies for sponsorships"
-      ],
-      achievements: [
-        "Best Technical Club Award 2022",
-        "Successfully organized 15+ technical workshops",
-        "Increased club membership by 40%"
+        "1. Led a team of 10 sub-heads, guiding them in web development to contribute to multiple websites for Spring Fest.",
+        "2. Developed and maintained key digital platforms, including the Spring Fest main website, NWP website, Eliminations platform, and the Spring Fest app.",
+        "3. Supervised all technical operations during the fest, ensuring seamless digital experiences by resolving real-time issues efficiently.",
+        "4. Conducted training sessions to help junior members learn web development and contribute effectively to technical projects.",
+        "5. Coordinated with non-tech teams, including design, and core, to ensure smooth integration of digital platforms and overall fest success.",
+        "6. Played a pivotal role in designing and managing various WEB platforms for the fest's success."
       ]
     },
     {
-      title: "Student Coordinator - Placement Cell",
-      organization: "Engineering College",
-      period: "2020 - 2021",
+      title: "Sponsorship - Senior Executive Member",
+      organization: "Gopali Youth Welfare Society (NGO)",
+      period: "2023 - 2024",
+      certificateLink: "https://drive.google.com/your-certificate-link-2",
       responsibilities: [
-        "Coordinated with 50+ companies for campus placements",
-        "Managed a team of 10 coordinators for placement activities",
-        "Organized pre-placement talks and interviews",
-        "Created and maintained student placement database",
-        "Conducted mock interviews and resume building workshops"
-      ],
-      achievements: [
-        "Achieved 85% placement rate",
-        "Brought 20 new companies to campus",
-        "Best Coordinator Award 2021"
+        "1. Raised INR 9.6M (30% YoY growth) through various channels, including gift matching, fundraising, alumni outreach, and CSR initiatives.",
+        "2. Secured INR 4.7M (23% YoY growth) within two weeks through the Gift Matching Program, reaching over 300,000 employees.",
+        "3. Partnered with PubMatic India for a CSR contribution of INR 0.5M and collaborated with Feeding India to fulfill hostel food needs worth INR 4M annually.",
+        "4. Guided 20 junior executive members in fundraising efforts, targeting over 500 alumni from more than six institutes through direct outreach and calls."
       ]
     },
     {
-      title: "Project Head - College Innovation Cell",
-      organization: "Engineering College",
-      period: "2019 - 2020",
+      title: "Social and Cultural Secretary",
+      organization: "Homi Jehangir Bhabha Hall of Residence, IIT Kharagpur",
+      period: "2023 - 2024",
+      certificateLink: "https://drive.google.com/file/d/1502qYGMHTAxLbvJvmoUnEnxgWeT9vcXH/view?usp=drive_link",
       responsibilities: [
-        "Led multiple innovative projects in emerging technologies",
-        "Mentored 30+ students in project development",
-        "Organized innovation challenges and hackathons",
-        "Collaborated with industry experts for project guidance",
-        "Published research papers in international conferences"
-      ],
-      achievements: [
-        "Won National Level Project Competition",
-        "2 Patent Applications Filed",
-        "Best Innovation Award 2020"
-      ]
+        "1. Coordinated participation and resident engagement in cultural events for IIT Kharagpur's General Championship 2024",
+        "2. Successfully organized and supervised multiple events, ensuring smooth operations and high levels of participation",
+        "3. Facilitated communication between residents and hall administration to address concerns and enhance community life",
+        "4. Worked closely with other secretaries and hall council members to create a vibrant and inclusive cultural environment"
+    ]
     }
   ];
 
@@ -87,9 +74,14 @@ export default function Responsibilities() {
               <div className="h-2 bg-gradient-to-r from-blue-600 to-purple-600" />
               
               <div className="p-6">
-                <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                  {position.title}
-                </h3>
+                <div className="flex justify-between items-center mb-2">
+                  <h3 className="text-2xl font-semibold text-gray-900">
+                    {position.title}
+                  </h3>
+                  <a href={position.certificateLink} target="_blank" rel="noopener noreferrer">
+                    <Award className="h-6 w-6 text-blue-600 hover:text-blue-800 transition-colors duration-300" />
+                  </a>
+                </div>
                 
                 <div className="flex items-center gap-2 text-gray-600 mb-1">
                   <Users className="h-4 w-4" />
@@ -106,20 +98,7 @@ export default function Responsibilities() {
                   <ul className="space-y-2">
                     {position.responsibilities.map((resp, idx) => (
                       <li key={idx} className="flex items-start">
-                        <span className="inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 mt-2 mr-2" />
                         <span className="text-gray-600">{resp}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 className="text-lg font-medium text-gray-900 mb-3">Key Achievements:</h4>
-                  <ul className="space-y-2">
-                    {position.achievements.map((achievement, idx) => (
-                      <li key={idx} className="flex items-start">
-                        <Award className="h-4 w-4 text-blue-600 mt-1 mr-2" />
-                        <span className="text-gray-600">{achievement}</span>
                       </li>
                     ))}
                   </ul>
@@ -131,4 +110,4 @@ export default function Responsibilities() {
       </div>
     </div>
   );
-} 
+}
