@@ -36,9 +36,9 @@ const Navbar = () => {
             <div className="flex items-center gap-2 bg-white/50 backdrop-blur-sm px-3 py-2 rounded-full border border-gray-100/20 shadow-sm">
               {[
                 { href: '/', label: 'About' },
-                { href: '/projects', label: 'Projects' },
                 { href: '/experience', label: 'Experience' },
-                { href: '/responsibilities', label: 'Responsibilities' },
+                { href: '/projects', label: 'Projects' },
+                { href: '/responsibilities', label: 'Positions Of Responsibility' },
               ].map(({ href, label }) => (
                 <Link
                   key={href}
@@ -84,9 +84,9 @@ const Navbar = () => {
             <div className="container mx-auto divide-y divide-gray-100/20">
               {[
                 { href: '/', label: 'About' },
-                { href: '/projects', label: 'Projects' },
                 { href: '/experience', label: 'Experience' },
-                { href: '/responsibilities', label: 'Responsibilities' },
+                { href: '/projects', label: 'Projects' },
+                { href: '/responsibilities', label: 'Positions Of Responsibility' },
               ].map(({ href, label }, index) => (
                 <Link
                   key={href}

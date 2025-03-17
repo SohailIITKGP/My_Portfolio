@@ -3,46 +3,45 @@ import { Calendar, MapPin } from "lucide-react";
 export default function Experience() {
   const experiences = [
     {
-      title: "Senior Software Engineer",
-      company: "Tech Solutions Inc.",
-      location: "Mumbai, India",
-      period: "Jan 2022 - Present",
-      responsibilities: [
-        "Led a team of 5 developers in developing a high-traffic e-commerce platform",
-        "Improved application performance by 40% through code optimization and caching",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Mentored junior developers and conducted code reviews",
-        "Architected and implemented microservices architecture"
+      title: "Mern Developer",
+      company: "Spring Fest",
+      location: "IIT Kharagpur",
+      period: "April 2024 - Jan 2025",
+      "responsibilities": [
+        "1. Developed and integrated front-end and back-end APIs for the Spring Fest app event registrations, supporting event rules (solo, group, or both). Implemented deregistration features for removing specific members or entire teams from events and enabled team updates post-registration to add more members.",
+        "2. Integrated CA leaderboard APIs and developed interactive components for the Idea Sharing and Complaints pages with issue history tracking, contributing to 1500+ app downloads.",
+        "3. Developed APIs for contingent features, allowing users to create contingents, manage members, join contingents using name-code pairs, and exit contingents. Revolutionized payment processes by enabling single-point transactions for entire groups and streamlined accommodation allocation through a unified allotment system.",
+        "4. Implemented secure user authentication on the Spring Fest main website, including login/signup and Google authentication, facilitating 1 lakh+ participant registrations and onboarding 2,200+ users. Integrated payment APIs on the main website, successfully processing transactions exceeding 43 lakh from individual and contingent payments.",
+        "5. Designed and developed the merchandise page with flexible delivery options, allowing users to choose between home delivery or on-site collection during the fest. Implemented a payment API with conditional logic to manage charges and workflows based on user-selected delivery preferences."
       ],
-      tech: ["React", "Node.js", "AWS", "Docker", "MongoDB"]
+      tech: ["ReactJS", "NextJS", "React-Native(Expo)", "Node.js", "TypeScript", "MySql", "TailwindCSS", "Prisma"]
     },
     {
-      title: "Software Developer",
-      company: "Digital Innovations",
-      location: "Bangalore, India",
-      period: "Jun 2020 - Dec 2021",
+      title: "Development Innovation Intern",
+      company: "Greenvayu",
+      location: "Bhopal, MP",
+      period: "Jun 2024 - Aug 2024",
       responsibilities: [
-        "Developed and maintained multiple client-facing web applications",
-        "Integrated third-party APIs and payment gateways",
-        "Reduced server response time by 50% through database optimization",
-        "Created reusable component library used across projects",
-        "Implemented automated testing reducing bug reports by 30%"
+        "1. Developed a Learning Management System (LMS) with secure JWT authentication and role-based access control for admins, instructors, and students using Node.js, Next.js, and MySQL.",
+        "2. Designed and optimized RESTful APIs for course creation, user enrollment, and progress tracking, ensuring efficient database operations with MySQL and Sequelize ORM.",
+        "3. Built an interactive dashboard using Next.js/React, featuring student progress tracking, quizzes, and automated certificate generation with HTML-to-PDF conversion.",
+        "4. Integrated video lectures with AWS S3/Cloudinary for scalable media storage and implemented real-time notifications for assignments and updates using WebSockets and Firebase Cloud Messaging."
       ],
-      tech: ["Angular", "Python", "PostgreSQL", "Redis", "Jenkins"]
+      tech: ["NextJS", "TypeScript", "PostgreSQL", "AWS S3", "Cloudinary", "HTML-to-PDF Generation", "JWT Authentication"]
     },
     {
-      title: "Junior Developer",
-      company: "StartUp Tech",
-      location: "Delhi, India",
-      period: "Jan 2019 - May 2020",
-      responsibilities: [
-        "Built responsive web applications using modern JavaScript frameworks",
-        "Collaborated with UI/UX team to implement pixel-perfect designs",
-        "Developed RESTful APIs for mobile applications",
-        "Participated in daily stand-ups and sprint planning",
-        "Contributed to improving development processes"
+      title: "Frontend Developer",
+      company: "Spring Fest",
+      location: "IIT Kharagpur",
+      period: "Oct 2023 - Jan 2024",
+      "responsibilities": [
+        "1. Implemented user authentication on the Spring Fest main website by integrating login, signup, Google login, and forgot password APIs, ensuring a seamless and secure authentication process.",
+        "2. Developed the Accommodation page for the main website, designing an intuitive and visually appealing UI and implementing the necessary frontend and backend code for a smooth user experience.",
+        "3. Integrated the 'Invite to Prom' API on the Prom Night website, allowing participants to invite partners to the event, enhancing user engagement and event participation.",
+        "4. Designed the Spring Fest social website based on Figma designs, translating the provided UI/UX mockups into a fully functional and responsive web interface.",
+        "5. Optimized UI/UX across multiple pages of the Spring Fest platform, ensuring a visually appealing and user-friendly interface aligned with modern web design principles."
       ],
-      tech: ["JavaScript", "React", "Express.js", "MySQL", "Git"]
+      tech: ["JavaScript", "ReactJS", "CSS", "Git"]
     }
   ];
 
@@ -63,7 +62,7 @@ export default function Experience() {
               Journey
             </span>
           </h1>
-          
+
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             My professional journey and the impact I've made at various organizations.
           </p>
@@ -106,7 +105,6 @@ export default function Experience() {
                       <ul className="space-y-2">
                         {exp.responsibilities.map((resp, idx) => (
                           <li key={idx} className="flex items-start">
-                            <span className="inline-block w-2 h-2 rounded-full bg-gradient-to-r from-blue-600 to-emerald-600 mt-2 mr-2" />
                             <span className="text-gray-700">{resp}</span>
                           </li>
                         ))}
