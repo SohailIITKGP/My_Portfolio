@@ -13,7 +13,7 @@ const projects = [
       "Implemented a skill development recommendation system suggesting relevant courses and certifications based on career goals"
     ],
     github: 'https://github.com/SohailIITKGP/Sensai',
-    demo: 'https://example.com',
+    demo: 'https://sensai-woad.vercel.app',
     tags: ['NextJS', 'TypeScript', 'Prisma', 'Convex', 'Inngest', 'Tailwind CSS']
   },
   {
@@ -68,7 +68,7 @@ const projects = [
       "Designed a secure data handling system to protect sensitive financial information while maintaining compliance with best practices"
     ],
     github: 'https://github.com/SohailIITKGP/FinanSmart',
-    demo: 'https://github.com/SohailIITKGP/FinanSmart',
+    demo: 'https://finan-smart-sand.vercel.app',
     tags: ['NextJS', 'TypeScript', 'NodeJS','DriggleORM','Clerk','Convex']
   },
   {
