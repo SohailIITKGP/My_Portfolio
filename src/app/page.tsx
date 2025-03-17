@@ -3,12 +3,12 @@ import { Github, Linkedin, Mail, Code, Sparkles, Rocket, BookOpen, Coffee, Users
 
 export default function About() {
   const skills = [
-    { icon: Code, label: "Full Stack Development", desc: "Proficient in both frontend and backend technologies" },
-    { icon: Sparkles, label: "UI/UX Design", desc: "Creating beautiful and intuitive user interfaces" },
-    { icon: Rocket, label: "Performance Optimization", desc: "Building fast and scalable applications" },
-    { icon: BookOpen, label: "Continuous Learning", desc: "Always staying updated with latest technologies" },
-    { icon: Coffee, label: "Problem Solving", desc: "Finding elegant solutions to complex problems" },
-    { icon: Users, label: "Team Collaboration", desc: "Working effectively in agile environments" },
+    { icon: Code, label: "MERN Stack Development", desc: "Expert in building Mern-stack applications using MongoDB, Express.js, React, and Node.js,etc" },
+    { icon: Rocket, label: "Performance Optimization", desc: "Specialized in enhancing application performance and scalability" },
+    { icon: BookOpen, label: "Continuous Learning", desc: "Committed to staying updated with the latest advancements in technology" },
+    { icon: Coffee, label: "Problem Solving", desc: "Adept at finding innovative solutions to complex challenges" },
+    { icon: Users, label: "Team Collaboration", desc: "Experienced in working effectively within agile teams" },
+    { icon: Sparkles, label: "Leadership", desc: "Proven ability to lead teams towards successful project completion" },
   ];
 
   return (
@@ -35,25 +35,41 @@ export default function About() {
                 />
               </div>
             </div>
-            
+
             <div className="mt-8 text-center lg:text-left">
               <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-                About{" "}
+                Hey, I am{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-emerald-500 animate-gradient">
-                  Me
+                  Sohail Belim
                 </span>
               </h1>
-              
+
               <p className="text-lg leading-8 text-gray-700">
-                I'm a passionate developer with a keen eye for design and a love for creating 
-                intuitive user experiences. With expertise in modern web technologies, I strive 
-                to build applications that not only look beautiful but also provide real value 
-                to users.
+                I am a <span className="font-semibold text-blue-600">3rd-year undergraduate student</span> at the
+                <span className="font-semibold text-blue-600"> Indian Institute of Technology, Kharagpur (IIT Kharagpur)</span>,
+                from the <span className="font-semibold text-blue-600">Department of Humanities and Social Sciences</span>,
+                pursuing a <span className="font-semibold text-blue-600">Bachelor of Science in Economics</span>.
               </p>
-              
+
+              <p className="text-lg leading-8 text-gray-700 mt-4">
+                I am passionate about
+                <span className="font-semibold text-green-600"> MERN-stack development</span> and
+                <span className="font-semibold text-green-600"> app development using React Native (Expo)</span>.
+                Specializing in the <span className="font-semibold text-green-600">MERN stack</span>,
+                I love crafting <span className="font-semibold">clean, scalable, and user-friendly applications</span>
+                for both web and mobile platforms.
+              </p>
+
+              <p className="text-lg leading-8 text-gray-700 mt-4">
+                When I’m not coding, I’m <span className="font-semibold">exploring new technologies</span>,
+                <span className="font-semibold"> optimizing user experiences</span>, or
+                <span className="font-semibold"> working on exciting side projects</span>.
+                Let’s build something amazing together! 🚀
+              </p>
+
               <div className="mt-8 flex gap-4 justify-center lg:justify-start">
                 <a
-                  href="https://github.com/sohail"
+                  href="https://github.com/SohailIITKGP"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative rounded-full p-3 bg-gradient-to-br from-blue-100 to-emerald-100 shadow-lg hover:shadow-xl transition-all duration-300"
@@ -61,19 +77,15 @@ export default function About() {
                   <Github className="h-6 w-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
                 </a>
                 <a
-                  href="https://linkedin.com/in/sohail"
+                  href="https://www.linkedin.com/in/sohail-belim-082387258/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative rounded-full p-3 bg-gradient-to-br from-cyan-100 to-blue-100 shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   <Linkedin className="h-6 w-6 text-gray-700 group-hover:text-cyan-600 transition-colors" />
                 </a>
-                <a
-                  href="mailto:sohail@example.com"
-                  className="group relative rounded-full p-3 bg-gradient-to-br from-emerald-100 to-cyan-100 shadow-lg hover:shadow-xl transition-all duration-300"
-                >
-                  <Mail className="h-6 w-6 text-gray-700 group-hover:text-emerald-600 transition-colors" />
-                </a>
+                
+
               </div>
 
               <div className="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
@@ -112,7 +124,7 @@ export default function About() {
           <div className="space-y-10">
             <div className="grid gap-6 grid-cols-1 sm:grid-cols-2">
               {skills.map((skill, index) => (
-                <div 
+                <div
                   key={index}
                   className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-white/80 to-blue-50/30 backdrop-blur-sm p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-100/20"
                 >

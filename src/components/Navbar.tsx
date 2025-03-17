@@ -11,7 +11,7 @@ const Navbar = () => {
   const pathname = usePathname()
 
   const isActive = (path: string) => {
-    if (path === '/' && pathname === '/') return true
+    if (path === '/' && pathname === '/about') return true
     if (path !== '/' && pathname.startsWith(path)) return true
     return false
   }
@@ -26,7 +26,7 @@ const Navbar = () => {
             className="relative group"
           >
             <span className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 group-hover:from-pink-600 group-hover:via-purple-600 group-hover:to-indigo-600 transition-all duration-500">
-              Sohail
+              Portfolio
             </span>
             <span className="absolute -bottom-1.5 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-indigo-600 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
           </Link>
@@ -83,8 +83,7 @@ const Navbar = () => {
           <div className="absolute left-0 right-0 top-20 bg-white/90 backdrop-blur-xl border-t border-gray-100/20 shadow-lg md:hidden animate-in fade-in slide-in-from-top duration-200">
             <div className="container mx-auto divide-y divide-gray-100/20">
               {[
-                { href: '/', label: 'Home' },
-                { href: '/about', label: 'About' },
+                { href: '/', label: 'About' },
                 { href: '/projects', label: 'Projects' },
                 { href: '/experience', label: 'Experience' },
                 { href: '/responsibilities', label: 'Responsibilities' },
