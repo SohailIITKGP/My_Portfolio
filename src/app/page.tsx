@@ -57,7 +57,7 @@ export default function About() {
                 <span className="font-semibold text-green-600"> app development using React Native (Expo)</span>.
                 Specializing in the <span className="font-semibold text-green-600">MERN stack</span>,
                 I love crafting <span className="font-semibold">clean, scalable, and user-friendly applications</span>
-                for both web and mobile platforms.
+                 for both web and mobile platforms.
               </p>
 
               <p className="text-lg leading-8 text-gray-700 mt-4">
