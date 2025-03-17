@@ -13,7 +13,7 @@ export default function Responsibilities() {
         "3. Supervised all technical operations during the fest, ensuring seamless digital experiences by resolving real-time issues efficiently.",
         "4. Conducted training sessions to help junior members learn web development and contribute effectively to technical projects.",
         "5. Coordinated with non-tech teams, including design, and core, to ensure smooth integration of digital platforms and overall fest success.",
-        "6. Played a pivotal role in designing and managing various WEB platforms for the fest's success."
+        "6. Played a pivotal role in designing and managing various WEB platforms for the fest&apos;s success."
       ]
     },
     {
@@ -34,7 +34,7 @@ export default function Responsibilities() {
       period: "2023 - 2024",
       certificateLink: "https://drive.google.com/file/d/1502qYGMHTAxLbvJvmoUnEnxgWeT9vcXH/view?usp=drive_link",
       responsibilities: [
-        "1. Coordinated participation and resident engagement in cultural events for IIT Kharagpur's General Championship 2024",
+        "1. Coordinated participation and resident engagement in cultural events for IIT Kharagpur&apos;s General Championship 2024",
         "2. Successfully organized and supervised multiple events, ensuring smooth operations and high levels of participation",
         "3. Facilitated communication between residents and hall administration to address concerns and enhance community life",
         "4. Worked closely with other secretaries and hall council members to create a vibrant and inclusive cultural environment"
@@ -61,7 +61,7 @@ export default function Responsibilities() {
           </h1>
           
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Discover the various roles and responsibilities I've handled in my professional journey.
+            Discover the various roles and responsibilities I&apos;ve handled in my professional journey.
           </p>
         </div>
 

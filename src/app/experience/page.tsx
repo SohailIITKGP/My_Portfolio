@@ -64,7 +64,7 @@ export default function Experience() {
           </h1>
 
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            My professional journey and the impact I've made at various organizations.
+            My professional journey and the impact I&apos;ve made at various organizations.
           </p>
         </div>
 

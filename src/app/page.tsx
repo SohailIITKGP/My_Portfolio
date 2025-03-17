@@ -61,10 +61,10 @@ export default function About() {
               </p>
 
               <p className="text-lg leading-8 text-gray-700 mt-4">
-                When I'm not coding, I'm <span className="font-semibold">exploring new technologies</span>,
+                When I&apos;m not coding, I&apos;m <span className="font-semibold">exploring new technologies</span>,
                 <span className="font-semibold"> optimizing user experiences</span>, or
                 <span className="font-semibold"> working on exciting side projects</span>.
-                Let's build something amazing together! 🚀
+                Let&apos;s build something amazing together! 🚀
               </p>
 
               <div className="mt-8 flex gap-4 justify-center lg:justify-start">
