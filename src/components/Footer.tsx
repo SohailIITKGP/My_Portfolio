@@ -55,7 +55,7 @@ const Footer = () => {
             </h3>
             <div className="flex flex-col gap-3">
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:sohailbelim2425@gmail.com"
                 className="group flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors duration-200"
               >
                 <span className="relative rounded-full bg-gradient-to-br from-blue-50 to-cyan-50 p-2 transition-colors duration-200 group-hover:from-blue-100 group-hover:to-cyan-100">
@@ -63,15 +63,15 @@ const Footer = () => {
                 </span>
                 <span>sohailbelim2425@gmail.com</span>
               </a>
-              <a
-                href="tel:+1234567890"
+                <a
+                href="tel:+918278637608"
                 className="group flex items-center gap-2 text-gray-600 hover:text-cyan-600 transition-colors duration-200"
-              >
+                >
                 <span className="relative rounded-full bg-gradient-to-br from-cyan-50 to-emerald-50 p-2 transition-colors duration-200 group-hover:from-cyan-100 group-hover:to-emerald-100">
                   <Phone className="h-4 w-4" />
                 </span>
                 <span>+91 8278637608</span>
-              </a>
+                </a>
               <div className="group flex items-center gap-2 text-gray-600">
                 <span className="relative rounded-full bg-gradient-to-br from-emerald-50 to-blue-50 p-2">
                   <MapPin className="h-4 w-4" />
