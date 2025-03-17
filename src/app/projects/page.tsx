@@ -2,40 +2,86 @@ import { ExternalLink, Github, Tags, CheckCircle2 } from 'lucide-react'
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
+    title: 'AI Career Coach',
     description: [
-      'Developed a full-stack e-commerce platform with real-time inventory management',
-      'Implemented secure payment gateway integration with Stripe and PayPal',
-      'Built responsive admin dashboard for order management and analytics',
-      'Achieved 40% improvement in page load time through optimization'
+      "Developed an AI-powered career coaching platform to assist professionals in job search and career growth",
+      "Implemented AI-driven career guidance system providing personalized job recommendations and skill development paths",
+      "Designed an adaptive interview preparation tool with role-specific questions, mock interviews, and instant feedback",
+      "Built an ATS-optimized resume generator to enhance job application success with AI-assisted formatting and keyword suggestions",
+      "Integrated an AI-powered cover letter generator for crafting personalized, job-specific cover letters",
+      "Developed a real-time industry insights module offering salary benchmarks, market trends, and emerging skills data",
+      "Implemented a skill development recommendation system suggesting relevant courses and certifications based on career goals"
     ],
-    github: 'https://github.com',
+    github: 'https://github.com/SohailIITKGP/Sensai',
     demo: 'https://example.com',
-    tags: ['React', 'Node.js', 'MongoDB', 'Redux', 'Stripe']
+    tags: ['NextJS', 'TypeScript', 'Prisma', 'Convex', 'Inngest', 'Tailwind CSS']
   },
   {
-    title: 'Social Media Dashboard',
+    title: 'Postman Clone',
     description: [
-      'Created a real-time social media analytics dashboard with live data updates',
-      'Integrated multiple social media APIs (Twitter, Instagram, Facebook)',
-      'Implemented advanced data visualization using D3.js and Chart.js',
-      'Built custom reporting system with PDF export functionality'
-    ],
-    github: 'https://github.com',
-    demo: 'https://example.com',
-    tags: ['Next.js', 'TypeScript', 'Tailwind', 'D3.js', 'Firebase']
+      "Built a Postman-like API testing tool to input endpoints, manage headers, and view responses, improving skills in API request handling and testing",
+      "Implemented features like GET, POST, PUT, and DELETE request handling, allowing users to interact with API endpoints",
+      "Designed a user-friendly interface with request history and saved API collections for better usability",
+      "Added support for authentication methods like API keys, Bearer tokens, and Basic Auth to test secured endpoints",
+      "Integrated response formatting with JSON prettification and syntax highlighting for better readability",
+      "Developed an error-handling system to display response status codes, headers, and request execution time"
+    ],    
+    github: 'https://github.com/SohailIITKGP/Postman-Clone',
+    demo: 'https://postman-clone-pink.vercel.app/',
+    tags: ['ReactJS', 'JavaScript', 'Tailwind CSS','TypeScript']
   },
   {
-    title: 'AI-Powered Task Manager',
+    title: 'Chat Box',
     description: [
-      'Developed an AI-powered task management system with smart task prioritization',
-      'Implemented natural language processing for task creation and management',
-      'Built automated reminder system with email and push notifications',
-      'Created collaborative workspace features with real-time updates'
+      "Developed a full-stack application with live chat functionality for seamless user chatting and messaging, leveraging UI libraries to enhance user interactivity and experience",
+      "Optimized backend communication for efficient handling of chats and sharing of files, also implemented group chats for people to have conversations within groups",
+      "Integrated real-time messaging using WebSockets to ensure instant message delivery and smooth user experience",
+      "Implemented end-to-end encryption for secure communication and data privacy",
+      "Added support for multimedia sharing, allowing users to send images, videos, and documents within chats",
+      "Designed a notification system to alert users of new messages, mentions, and group activities",
+      "Developed a message status feature, including sent, delivered, and read receipts to enhance communication transparency",
+      "Built a responsive and intuitive UI with dark mode support for improved user experience"
     ],
-    github: 'https://github.com',
-    demo: 'https://example.com',
-    tags: ['React', 'Python', 'TensorFlow', 'FastAPI', 'PostgreSQL']
+    github: 'https://github.com/SohailIITKGP/Chatbox',
+    demo: 'https://chatbox-six-roan.vercel.app/',
+    tags: ['NextJS', 'TypeScript', 'NodeJS','ExpressJS']
+  },
+  {
+    title: 'Job Portal Web Application ',
+    description: [
+      "Developed a full-stack job portal with real-time job posting, application tracking, and role-based access control, ensuring efficient data management using RESTful APIs and MySQL",
+      "Implemented secure user authentication with JWT tokens and bcrypt hashing, enhancing data security and access control",
+      "Integrated email notifications using Nodemailer to inform users about job applications, interview updates, and employer responses",
+      "Designed an intuitive dashboard for recruiters and job seekers, featuring job recommendations, saved listings, and application status tracking"
+    ],    
+    github: 'https://github.com/SohailIITKGP/Job-Portal-Web-Application',
+    demo: 'https://github.com/SohailIITKGP/Job-Portal-Web-Application',
+    tags: ['NextJS','NodeJS', 'ExpressJS', 'NodeMailer', 'MySQL']
+  },
+  {
+    title: 'AI Expense Tracker',
+    description: [
+      "Integrated Google Generative AI to analyze user financial data, including income, expenses, and budgets, for actionable insights",
+      "Implemented a user-friendly interface for seamless data input and retrieval of AI-generated financial advice",
+      "Enhanced user experience with intelligent financial management features, helping users optimize savings and budgeting",
+      "Utilized modern web development practices to ensure a scalable and high-performance application",
+      "Designed a secure data handling system to protect sensitive financial information while maintaining compliance with best practices"
+    ],
+    github: 'https://github.com/SohailIITKGP/FinanSmart',
+    demo: 'https://github.com/SohailIITKGP/FinanSmart',
+    tags: ['NextJS', 'TypeScript', 'NodeJS','DriggleORM','Clerk','Convex']
+  },
+  {
+    title: 'TODO Web Application',
+    description: [
+      "Developed a simple and intuitive To-Do web application for task management and productivity tracking",
+      "Implemented features like task creation, editing, deletion, and status updates to help users stay organized",
+      "Designed a clean and responsive UI using modern frontend technologies for a seamless user experience",
+      "Integrated local storage and database support to ensure task persistence across sessions"
+    ],
+    github: 'https://github.com/SohailIITKGP/Todo',
+    demo: 'https://to-do-app-ruddy-seven.vercel.app/',
+    tags: ['NextJS', 'TypeScript', 'Prisma','Clerk','Convex']
   }
 ];
 
