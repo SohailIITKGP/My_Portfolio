@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Github, Linkedin, Mail, Code, Sparkles, Rocket, BookOpen, Coffee, Users } from "lucide-react";
+import { Github, Linkedin, Code, Sparkles, Rocket, BookOpen, Coffee, Users } from "lucide-react";
 
 export default function About() {
   const skills = [
@@ -61,10 +61,10 @@ export default function About() {
               </p>
 
               <p className="text-lg leading-8 text-gray-700 mt-4">
-                When I’m not coding, I’m <span className="font-semibold">exploring new technologies</span>,
+                When I'm not coding, I'm <span className="font-semibold">exploring new technologies</span>,
                 <span className="font-semibold"> optimizing user experiences</span>, or
                 <span className="font-semibold"> working on exciting side projects</span>.
-                Let’s build something amazing together! 🚀
+                Let's build something amazing together! 🚀
               </p>
 
               <div className="mt-8 flex gap-4 justify-center lg:justify-start">
@@ -84,8 +84,6 @@ export default function About() {
                 >
                   <Linkedin className="h-6 w-6 text-gray-700 group-hover:text-cyan-600 transition-colors" />
                 </a>
-                
-
               </div>
 
               <div className="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
