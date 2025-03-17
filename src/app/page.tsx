@@ -27,7 +27,7 @@ export default function About() {
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-cyan-500 to-emerald-500 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-500 animate-tilt"></div>
               <div className="relative h-64 w-64 sm:h-72 sm:w-72 rounded-2xl overflow-hidden ring-4 ring-white/80 backdrop-blur-sm">
                 <Image
-                  src="/Sohail.jpg"
+                  src="/About_Img.jpg"
                   alt="Sohail's Profile"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
