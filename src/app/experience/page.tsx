@@ -3,7 +3,7 @@ import { Calendar, MapPin } from "lucide-react";
 export default function Experience() {
   const experiences = [
     {
-      title: "Mern Developer",
+      title: "Software Developer",
       company: "Spring Fest",
       location: "IIT Kharagpur",
       period: "April 2024 - Jan 2025",
@@ -11,7 +11,7 @@ export default function Experience() {
         "1. Developed and integrated front-end and back-end APIs for the Spring Fest app event registrations, supporting event rules (solo, group, or both). Implemented deregistration features for removing specific members or entire teams from events and enabled team updates post-registration to add more members.",
         "2. Integrated CA leaderboard APIs and developed interactive components for the Idea Sharing and Complaints pages with issue history tracking, contributing to 1500+ app downloads.",
         "3. Developed APIs for contingent features, allowing users to create contingents, manage members, join contingents using name-code pairs, and exit contingents. Revolutionized payment processes by enabling single-point transactions for entire groups and streamlined accommodation allocation through a unified allotment system.",
-        "4. Implemented secure user authentication on the Spring Fest main website, including login/signup and Google authentication, facilitating 1 lakh+ participant registrations and onboarding 2,200+ users. Integrated payment APIs on the main website, successfully processing transactions exceeding 43 lakh from individual and contingent payments.",
+        "4. Implemented secure user authentication on the Spring Fest main website, including login/signup and Google authentication, facilitating 1 lakh+ participant registrations and onboarding 2,200+ users. Integrated payment APIs on the main website, successfully processing transactions exceeding 60 lakh from individual and contingent payments.",
         "5. Designed and developed the merchandise page with flexible delivery options, allowing users to choose between home delivery or on-site collection during the fest. Implemented a payment API with conditional logic to manage charges and workflows based on user-selected delivery preferences."
       ],
       tech: ["ReactJS", "NextJS", "React-Native(Expo)", "Node.js", "TypeScript", "MySql", "TailwindCSS", "Prisma"]
