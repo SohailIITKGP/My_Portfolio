@@ -48,7 +48,7 @@ export default function About() {
                 I am a <span className="font-semibold text-blue-600">Pre-final year student</span> at the
                 <span className="font-semibold text-blue-600"> Indian Institute of Technology, Kharagpur (IIT Kharagpur)</span>,
                 from the <span className="font-semibold text-blue-600">Department of Humanities and Social Sciences</span>,
-                pursuing a <span className="font-semibold text-blue-600">Bachelor's and Master's of Science in Economics</span>.
+                pursuing <span className="font-semibold text-blue-600">Bachelor's and Master's of Science in Economics</span>.
               </p>
 
               <p className="text-lg leading-8 text-gray-700 mt-4">
