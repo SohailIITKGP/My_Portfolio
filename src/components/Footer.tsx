@@ -99,7 +99,7 @@ const Footer = () => {
                 <span>GitHub Profile</span>
               </a>
               <a
-                href="https://www.linkedin.com/in/sohail-belim-082387258/"
+                href="https://www.linkedin.com/in/sohail-belim/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-2 text-gray-600 hover:text-cyan-600 transition-colors duration-200"

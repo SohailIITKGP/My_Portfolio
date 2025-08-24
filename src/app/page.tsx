@@ -48,7 +48,7 @@ export default function About() {
                 I am a <span className="font-semibold text-blue-600">Pre-final year student</span> at the
                 <span className="font-semibold text-blue-600"> Indian Institute of Technology, Kharagpur (IIT Kharagpur)</span>,
                 from the <span className="font-semibold text-blue-600">Department of Humanities and Social Sciences</span>,
-                pursuing <span className="font-semibold text-blue-600">Bachelor's and Master's of Science in Economics</span>.
+                pursuing <span className="font-semibold text-blue-600">{"Bachelor's"} and {"Master's"} of Science in Economics</span>.
               </p>
 
               <p className="text-lg leading-8 text-gray-700 mt-4">
@@ -73,7 +73,7 @@ export default function About() {
                   <Github className="h-6 w-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/sohail-belim-082387258/"
+                  href="https://www.linkedin.com/in/sohail-belim/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative rounded-full p-3 bg-gradient-to-br from-cyan-100 to-blue-100 shadow-lg hover:shadow-xl transition-all duration-300"
