@@ -55,7 +55,6 @@ export default function Experience() {
       </div>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16">
-          <span className="text-blue-600 font-semibold mb-4 block">EXPERIENCE</span>
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-4">
             Professional{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600">

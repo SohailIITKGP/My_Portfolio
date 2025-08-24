@@ -26,7 +26,7 @@ const Navbar = () => {
             className="relative group"
           >
             <span className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 group-hover:from-pink-600 group-hover:via-purple-600 group-hover:to-indigo-600 transition-all duration-500">
-              Portfolio
+              Sohail Belim
             </span>
             <span className="absolute -bottom-1.5 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-indigo-600 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
           </Link>

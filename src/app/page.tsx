@@ -27,7 +27,7 @@ export default function About() {
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-cyan-500 to-emerald-500 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-500 animate-tilt"></div>
               <div className="relative h-64 w-64 sm:h-72 sm:w-72 rounded-2xl overflow-hidden ring-4 ring-white/80 backdrop-blur-sm">
                 <Image
-                  src="/About_Img.webp"
+                  src="/Sohail.webp"
                   alt="Sohail's Profile"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -45,25 +45,21 @@ export default function About() {
               </h1>
 
               <p className="text-lg leading-8 text-gray-700">
-                I am a <span className="font-semibold text-blue-600">3rd-year undergraduate student</span> at the
+                I am a <span className="font-semibold text-blue-600">Pre-final year student</span> at the
                 <span className="font-semibold text-blue-600"> Indian Institute of Technology, Kharagpur (IIT Kharagpur)</span>,
                 from the <span className="font-semibold text-blue-600">Department of Humanities and Social Sciences</span>,
-                pursuing a <span className="font-semibold text-blue-600">Bachelor of Science in Economics</span>.
+                pursuing a <span className="font-semibold text-blue-600">Bachelor's and Master's of Science in Economics</span>.
               </p>
 
               <p className="text-lg leading-8 text-gray-700 mt-4">
-                I am passionate about
-                <span className="font-semibold text-green-600"> MERN-stack development</span> and
+                I am passionate about 
+                <span className="font-semibold text-green-600"> Software development,</span>
+                <span className="font-semibold text-green-600"> full-stack development</span> and
                 <span className="font-semibold text-green-600"> app development using React Native (Expo)</span>.
-                Specializing in the <span className="font-semibold text-green-600">MERN stack</span>,
-                I love crafting <span className="font-semibold">clean, scalable, and user-friendly applications</span>
-                 for both web and mobile platforms.
+                I love crafting <span className="font-semibold">clean, scalable, and user-friendly applications </span>
               </p>
 
               <p className="text-lg leading-8 text-gray-700 mt-4">
-                When I&apos;m not coding, I&apos;m <span className="font-semibold">exploring new technologies</span>,
-                <span className="font-semibold"> optimizing user experiences</span>, or
-                <span className="font-semibold"> working on exciting side projects</span>.
                 Let&apos;s build something amazing together! 🚀
               </p>
 
