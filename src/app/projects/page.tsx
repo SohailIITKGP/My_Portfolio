@@ -2,6 +2,45 @@ import { ExternalLink, Github, Tags, CheckCircle2 } from 'lucide-react'
 
 const projects = [
   {
+    title: 'Real-time ClinicFlow Management',
+    description: [
+      "Architected real-time queue system using Next.js and Socket.IO, eliminating wait-time uncertainty through live updates",
+      "Reduced booking errors by 60% via transaction-safe appointment APIs using PostgreSQL, Redis and concurrent queue operations",
+      "Built secure authentication with Firebase Admin SDK, JWTand cookies, enabling role-based clinic access and session persistence",
+      "Improved performance 3X using Redis pipelines, Axios interceptors and Socket.IO fast updates for 100+ concurrent users",
+      "Designed responsive admin dashboard with React, Tailwind CSS, and multi-tab views, streamlining staff control over live patient queues",
+    ],
+    github: 'https://github.com/SohailIITKGP/ClinicFlow_backend',
+    demo: '',
+    tags: ['NextJS', 'TypeScript', 'Prisma','Postgresql', 'NestJS', 'Tailwind CSS']
+  },
+  {
+    title: 'Spring Fest CRM Portal',
+    description: [
+      "Migrated 9-year-old PHP system to modern Next.js with typeScript stack, enabling rapid feature deployment for 10K+ users",
+      "Integrated PhonePe API with rollback handling and real-time tracking, processing 60 lakh+ transactions at 99.9% success rate",
+      "Developed JWT-based auth with OTP, bcrypt encryption and Redis throttling, blocking abuse and ensuring safe role-based access",
+      "Built QR-based accommodation system with supporting individual and 300+ group bookings with email confirmations",
+      "Designed Prisma + PostgreSQL database, featuring 25+ optimized schemas with strong referential integrity across all modules",
+    ],
+    github: '',
+    demo: 'https://masterapi.springfest.tech/',
+    tags: ['NextJS', 'TypeScript', 'Prisma','Sql', 'Redis', 'Tailwind CSS','PhonePe Integration']
+  },
+  {
+    title: 'Spring Fest App',
+    description: [
+      "Built a React Native app using Expo + TypeScript, enabling registration, bookings and updates for 100+ sub-events",
+      "Built JWT auth with registration, AsyncStorage persistence and password rules for onboarding and protected session handling",
+      "Develop global state management via Context API, syncing user data, event, bookings and cart actions across 50+ screens",
+      "Integrated Expo Notifications for alerts, reducing missed events by 40% and improving attendee with dynamic schedule reminders",
+      "Designed UI/UX with NativeWind, gradients and modals, creating interface with gesture support and responsive animations",
+    ],
+    github: '',
+    demo: 'https://play.google.com/store/apps/details?id=com.imaginedtime.sf25app',
+    tags: ['NextJS', 'TypeScript', 'Prisma','Sql', 'Redis', 'Tailwind CSS','PhonePe Integration']
+  },
+  {
     title: 'AI Career Coach',
     description: [
       "Developed an AI-powered career coaching platform to assist professionals in job search and career growth",
@@ -120,6 +159,7 @@ export default function Projects() {
                     {project.title}
                   </h3>
                   <div className="flex gap-3">
+                    {project.github && (
                     <a
                       href={project.github}
                       target="_blank"
@@ -129,6 +169,8 @@ export default function Projects() {
                     >
                       <Github className="h-5 w-5" />
                     </a>
+                    )}
+                    {project.demo && (
                     <a
                       href={project.demo}
                       target="_blank"
@@ -138,6 +180,7 @@ export default function Projects() {
                     >
                       <ExternalLink className="h-5 w-5" />
                     </a>
+                    )}
                   </div>
                 </div>
 
