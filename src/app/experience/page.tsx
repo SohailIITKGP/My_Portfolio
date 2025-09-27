@@ -3,23 +3,52 @@ import { Calendar, MapPin } from "lucide-react";
 export default function Experience() {
   const experiences = [
     {
+      title: "Freelance Software Developer",
+      company: "Cross Atlantic Software Pvt Ltd",
+      location: "Remote",
+      period: "Mar 2025 - Jun 2025",
+      "responsibilities": [
+        "1. Architected Veerive using Next.js, MongoDB, and RESTful APIs, enabling real-time market analysis with social sharing capabilities and personalized content management.",
+        "2. Engineered a sophisticated authentication system with OTP verification, JWT tokens, and dual OAuth providers, achieving 99.9% security compliance and handling 1000+ daily user sessions.",
+        "3. Designed an interactive content management system enabling users to save, categorize, and share analytics posts, resulting in a 60% increase in user engagement and a 45% boost in content virality.",
+        "4. Implemented real-time data persistence layer using MongoDB and Next.js API routes, managing 12+ data models and processing 500+ daily save/share operations with 99.99% uptime.",
+        "5. Developed a personalized dashboard featuring saved items retrieval, theme tracking, and one-click sharing integration, reducing content discovery time by 55% and increasing user retention by 40%."
+      ],
+      tech: ["ReactJS", "NextJS", "Node.js", "TypeScript", "MongoDB", "TailwindCSS", "Prisma"]
+    },
+    {
+      title: "Software Developer Intern", 
+      company: "Ai2Prod",
+      location: "Remote",
+      period: "Apr 2025 - Jun 2025",
+      "responsibilities": [
+        "1. Designed and developed a full-stack HR Management System for Ai2Prod’s client, streamlining day-to-day workflows and eliminating bottlenecks for a 150+ employees company.",
+        "2. Implemented secure role-based authentication and granular access controls, which reduced manual approval errors by nearly 90% while ensuring strict data privacy and confidentiality.",
+        "3. Automated end-to-end HR operations such as onboarding, attendance, and leave management, cutting down repetitive paperwork and reducing overall processing time by 65%.",
+        "4. Integrated real-time analytics with interactive dashboards, enabling data-driven decision-making and improving HR team productivity and efficiency by more than 40%.",
+        "5. Deployed scalable and high-performance architecture with REST APIs, optimized database queries, and ensured responsive, cross-device compatibility for seamless user experience."
+      ],
+      tech: ["ReactJS", "NextJS", "Node.js", "TypeScript", "MySql", "TailwindCSS", "Prisma","AWS"]
+    },
+    {
       title: "Software Developer",
       company: "Spring Fest",
       location: "IIT Kharagpur",
-      period: "April 2024 - Jan 2025",
+      period: "Apr 2024 - Jan 2025",
       "responsibilities": [
         "1. Developed and integrated front-end and back-end APIs for the Spring Fest app event registrations, supporting event rules (solo, group, or both). Implemented deregistration features for removing specific members or entire teams from events and enabled team updates post-registration to add more members.",
         "2. Integrated CA leaderboard APIs and developed interactive components for the Idea Sharing and Complaints pages with issue history tracking, contributing to 1500+ app downloads.",
-        "3. Developed APIs for contingent features, allowing users to create contingents, manage members, join contingents using name-code pairs, and exit contingents. Revolutionized payment processes by enabling single-point transactions for entire groups and streamlined accommodation allocation through a unified allotment system.",
-        "4. Implemented secure user authentication on the Spring Fest main website, including login/signup and Google authentication, facilitating 1 lakh+ participant registrations and onboarding 2,200+ users. Integrated payment APIs on the main website, successfully processing transactions exceeding 60 lakh from individual and contingent payments.",
-        "5. Designed and developed the merchandise page with flexible delivery options, allowing users to choose between home delivery or on-site collection during the fest. Implemented a payment API with conditional logic to manage charges and workflows based on user-selected delivery preferences."
+        "3. Designed and implemented APIs for event registrations, for both solo and group participation as per event rules, with functionalities adding members to existing registered team and deregistering individual members or the entire team from registered events.",
+        "4. Developed APIs for contingent features, allowing users to create contingents, manage members, join contingents using name-code pairs, and exit contingents. Revolutionized payment processes by enabling single-point transactions for entire groups and streamlined accommodation allocation through a unified allotment system.",
+        "5. Implemented secure user authentication on the Spring Fest main website, including login/signup and Google authentication, facilitating 1 lakh+ participant registrations and onboarding 2,200+ users. Integrated payment APIs on the main website, successfully processing transactions exceeding 60 lakh from individual and contingent payments.",
+        "6. Designed and developed the merchandise page with flexible delivery options, allowing users to choose between home delivery or on-site collection during the fest. Implemented a payment API with conditional logic to manage charges and workflows based on user-selected delivery preferences."
       ],
       tech: ["ReactJS", "NextJS", "React-Native(Expo)", "Node.js", "TypeScript", "MySql", "TailwindCSS", "Prisma"]
     },
     {
       title: "Development Innovation Intern",
       company: "Greenvayu",
-      location: "Bhopal, MP",
+      location: "Remote",
       period: "Jun 2024 - Aug 2024",
       responsibilities: [
         "1. Developed a Learning Management System (LMS) with secure JWT authentication and role-based access control for admins, instructors, and students using Node.js, Next.js, and MySQL.",
