@@ -55,7 +55,7 @@ export default function About() {
                 I am passionate about 
                 <span className="font-semibold text-green-600"> Software development,</span>
                 <span className="font-semibold text-green-600"> full-stack development</span> and
-                <span className="font-semibold text-green-600"> app development using React Native (Expo)</span>.
+                <span className="font-semibold text-green-600"> using React Native (Expo)</span>.
                 I love crafting <span className="font-semibold">clean, scalable, and user-friendly applications </span>
               </p>
 
